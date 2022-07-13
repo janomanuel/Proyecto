@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMISION 36370</title>
+</head>
+</body>
+        
+
+
+    <p style="color:red"> {{nombre}}  </p>
+    <p>  Apellido= {{apellido}}  </p>
+
+    <h2>LISTA DE NOTAS</h2>
+
+    {% for nota in lista %}
+
+
+        {% if nota < 6 %}
+    
+        <p style="color:red"></pstyle>DESAPROBADO= {{nota}}</p>
+
+        {% else %}
+
+        <p style="color:green"></pstyle>APROBADO= {{nota}}</p>
+
+        {% endif %}
+
+
+    {% endfor %} 
+        
+
+
+</body>
+</html>
+
+    
